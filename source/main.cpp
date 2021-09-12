@@ -7,8 +7,8 @@ int main(int argc, char **argv)
 {
     gfxInitDefault();
     consoleInit(NULL);
-    bpcInitialize();
-    bpcShutdownSystem();
-    bpcExit();
+    spsmInitialize();
+    spsmShutdown(false);
+    spsmExit();
 }
 
